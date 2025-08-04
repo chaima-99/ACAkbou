@@ -1,34 +1,40 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+// App.jsx
+import { useEffect } from 'react'
+import { motion } from 'framer-motion'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, [])
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="min-h-screen bg-gray-100 flex flex-col items-center justify-center gap-10 p-4">
+
+      {/* Tailwind CSS Test */}
+      <div className="text-3xl font-bold text-blue-600">
+        🚀 Tailwind CSS is Working!
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+
+      {/* Framer Motion Test */}
+      <motion.div
+        className="w-64 h-32 bg-green-400 rounded-lg shadow-lg flex items-center justify-center text-white text-xl"
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+      >
+        🎬 Framer Motion!
+      </motion.div>
+
+      {/* AOS Test */}
+      <div
+        data-aos="fade-up"
+        className="w-64 h-32 bg-purple-500 rounded-lg shadow-lg flex items-center justify-center text-white text-xl"
+      >
+        ✨ AOS Animation!
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    </div>
   )
 }
 
