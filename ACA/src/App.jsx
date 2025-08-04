@@ -6,7 +6,8 @@ import About from './components/About';
 import Services from './components/Services';
 import Event from './components/Event';
 import Contact from './components/Contact';
-
+import Footer
+ from './components/Footer';
 const App = () => {
   return (
     <Router>
@@ -21,6 +22,7 @@ const App = () => {
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
+        <Footer />
       </div>
     </Router>
   );
