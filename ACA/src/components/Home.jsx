@@ -105,8 +105,8 @@ const Home = () => {
 
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      /* Hero Section - Replace the existing hero section with this responsive version */
+<section className="relative min-h-screen flex items-center justify-center overflow-hidden">
   {/* Background Image with Responsive Sizing */}
   <div className="absolute inset-0">
     <img 
@@ -114,8 +114,8 @@ const Home = () => {
       alt="hero image" 
       className="w-full h-full object-cover object-center"
     />
-    {/* Overlay */}
-    <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/50"></div>
+    {/* Lighter Overlay for better image visibility */}
+    <div className="absolute inset-0 bg-gradient-to-r from-black/40 to-black/30"></div>
   </div>
   
   {/* Hero Content */}
