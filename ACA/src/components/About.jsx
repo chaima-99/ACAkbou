@@ -37,7 +37,7 @@ const About = () => {
 
   const coaches = [
     {
-      name: "Mourad Maaloum",
+      name: "Mourad Maloum",
       role: "Head Coach",
       experience: "12 years experience",
       specialty: "Track Olympic Qualifier",
@@ -115,7 +115,7 @@ const About = () => {
                 Our Mission
               </h2>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                FastTrack Athletic Club is committed to providing world-class training and coaching to athletes of all levels. We believe that every athlete has the potential to achieve greatness with the right guidance, support, and dedication.
+                Athlitisme Club Akbou is committed to providing world-class training and coaching to athletes of all levels. We believe that every athlete has the potential to achieve greatness with the right guidance, support, and dedication.
               </p>
               <p className="text-lg text-gray-700 mb-8 leading-relaxed">
                 Our comprehensive programs focus on developing not just athletic performance but also character, leadership, and life skills that will serve our athletes both on the track and beyond.
@@ -126,7 +126,7 @@ const About = () => {
                   <Target className="text-[#E63946]" size={24} />
                 </div>
                 <div>
-                  <div className="font-semibold text-lg">7 years of Excellence</div>
+                  <div className="font-semibold text-lg">9 years of Excellence</div>
                   <div className="text-sm opacity-90">Proven track record of developing champions</div>
                 </div>
               </div>
