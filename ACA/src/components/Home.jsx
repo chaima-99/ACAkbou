@@ -107,56 +107,60 @@ const Home = () => {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        {/* Background Image Placeholder */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/50">
-          <div className="w-full h-full bg-gray-400 flex items-center justify-center">
-            <img src={heroimg} alt="hero image" />
-          </div>
-        </div>
-        
-        {/* Hero Content */}
-        <div className="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8">
-          <motion.h1 
-            className="text-5xl md:text-7xl font-bold mb-6"
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-          >
-            RUN. TRAIN. ACHIEVE.
-          </motion.h1>
-          
-          <motion.p 
-            className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto"
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-          >
-            Join ACAkbou and unlock your potential with world-class training and coaching.
-          </motion.p>
-          
-          <motion.div 
-            className="flex flex-col sm:flex-row gap-4 justify-center"
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.6 }}
-          >
-            <Link 
-              to="/services"
-              className="bg-[#E63946] text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-red-700 transition-colors duration-200 inline-flex items-center justify-center space-x-2"
-            >
-              <Play size={20} />
-              <span>Services</span>
-            </Link>
-            <Link 
-              to="/contact"
-              className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-[#1D1D1D] transition-all duration-200 inline-flex items-center justify-center space-x-2"
-            >
-              <Phone size={20} />
-              <span>Contact Us</span>
-            </Link>
-          </motion.div>
-        </div>
-      </section>
+  {/* Background Image with Responsive Sizing */}
+  <div className="absolute inset-0">
+    <img 
+      src={heroimg} 
+      alt="hero image" 
+      className="w-full h-full object-cover object-center"
+    />
+    {/* Overlay */}
+    <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/50"></div>
+  </div>
+  
+  {/* Hero Content */}
+  <div className="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8">
+    <motion.h1 
+      className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 sm:mb-6 leading-tight"
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, delay: 0.2 }}
+    >
+      RUN. TRAIN. ACHIEVE.
+    </motion.h1>
+    
+    <motion.p 
+      className="text-lg sm:text-xl md:text-2xl mb-6 sm:mb-8 max-w-3xl mx-auto leading-relaxed px-2"
+      initial={{ opacity: 0, y: 30 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, delay: 0.4 }}
+    >
+      Join ACAkbou and unlock your potential with world-class training and coaching.
+    </motion.p>
+    
+    <motion.div 
+      className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center max-w-md sm:max-w-none mx-auto"
+      initial={{ opacity: 0, y: 30 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, delay: 0.6 }}
+    >
+      <Link 
+        to="/services"
+        className="w-full sm:w-auto bg-[#E63946] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg hover:bg-red-700 transition-colors duration-200 inline-flex items-center justify-center space-x-2"
+      >
+        <Play size={18} className="sm:w-5 sm:h-5" />
+        <span>Services</span>
+      </Link>
+      <Link 
+        to="/contact"
+        className="w-full sm:w-auto bg-transparent border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg hover:bg-white hover:text-[#1D1D1D] transition-all duration-200 inline-flex items-center justify-center space-x-2"
+      >
+        <Phone size={18} className="sm:w-5 sm:h-5" />
+        <span>Contact Us</span>
+      </Link>
+    </motion.div>
+  </div>
+</section>
 
       {/* Achievements Section */}
       <section className="py-20 bg-[#F1F1F1]">
