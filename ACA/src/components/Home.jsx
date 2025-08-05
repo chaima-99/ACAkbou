@@ -105,7 +105,6 @@ const Home = () => {
 
   return (
     <div className="min-h-screen">
-      /* Hero Section - Replace the existing hero section with this responsive version */
 <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
   {/* Background Image with Responsive Sizing */}
   <div className="absolute inset-0">
