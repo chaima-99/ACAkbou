@@ -83,14 +83,13 @@ const Footer = () => {
               
               <div className="flex items-center space-x-3">
                 <Mail className="text-[#E63946] flex-shrink-0" size={20} />
-                <span className="text-gray-300">info@fasttrack.com</span>
+                <span className="text-gray-300">acakbou@gmail.com</span>
               </div>
               
               <div className="flex items-start space-x-3">
                 <MapPin className="text-[#E63946] flex-shrink-0 mt-1" size={20} />
                 <div className="text-gray-300">
-                  <div>123 Athletic Way</div>
-                  <div>Sports City, SC 12345</div>
+                  <div>Stade 1 November 1954 akbou</div>
                 </div>
               </div>
             </div>

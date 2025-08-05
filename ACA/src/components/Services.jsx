@@ -279,7 +279,7 @@ const AthleticsComponent = () => {
 
 
 
-const AthleticsServices = () => {
+const Services = () => {
   useEffect(() => {
     if (typeof window !== 'undefined') {
       import('aos').then((AOS) => {
@@ -408,4 +408,4 @@ const AthleticsServices = () => {
   );
 };
 
-export default AthleticsServices;
+export default Services;
