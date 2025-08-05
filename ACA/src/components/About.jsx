@@ -5,8 +5,8 @@ import { Target, Heart, Star, Award, Users, Shield, Zap } from 'lucide-react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import aboutimg from '../assets/aboutimg.jpg';
-import Amer from '../assets/amer.jpg';
-import Mourad from '../assets/mourad.jpg';
+import Amer from '../assets/Amer.jpg';
+import Mourad from '../assets/Mourad.jpg';
 
 const About = () => {
   useEffect(() => {
