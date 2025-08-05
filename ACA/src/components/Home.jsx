@@ -3,7 +3,7 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Star, Globe, Users, Quote, ChevronLeft, ChevronRight, Play, Phone, Mail, MapPin, Award, Target, Activity } from 'lucide-react';
+import {  Quote, ChevronLeft, ChevronRight, Play, Phone,  Award, Target, Activity } from 'lucide-react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import heroimg from '../assets/heroimg.png';
